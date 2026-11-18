@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact – Aurelia Estates</title>
+<meta name="description" content="Aurelia Estates – luxury real estate worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/data.js"></script>
+</head>
+<body data-page="contact">
+<div id="scroll">
+<main>
+
+<section class="page-hero">
+  <div class="bgimg" id="ph-bg"></div>
+  <canvas id="hero-canvas" data-mode="house"></canvas>
+  <div class="wrap">
+    <div class="eyebrow">Get In Touch</div>
+    <h1 class="split-text">Let’s Start a<br><em>Conversation</em></h1>
+    <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</div>
+  </div>
+</section>
+<script>document.getElementById('ph-bg').style.backgroundImage="url("+IMG.contact+")"</script>
+
+<section class="pad">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <div class="eyebrow">Contact Details</div>
+      <h2 class="split-text">We’d Love to<br><em>Hear From You</em></h2>
+      <p style="margin-top:22px">Reach out for a private consultation, a property valuation or simply to ask a question.</p>
+      <ul class="contact-info">
+        <li data-reveal><i class="fa-solid fa-location-dot"></i><div><b>Head Office</b><p>720 Fifth Avenue, New York, NY 10019</p></div></li>
+        <li data-reveal><i class="fa-solid fa-phone"></i><div><b>Phone</b><p>+1 212 555 0188</p></div></li>
+        <li data-reveal><i class="fa-solid fa-envelope"></i><div><b>Email</b><p>hello@aurelia-estates.com</p></div></li>
+        <li data-reveal><i class="fa-solid fa-clock"></i><div><b>Hours</b><p>Mon–Sat · 9:00 – 19:00</p></div></li>
+      </ul>
+    </div>
+    <form class="form contact-form" data-reveal style="background:var(--card);border:1px solid var(--line);padding:50px">
+      <div class="row"><div class="field"><input required placeholder="Full name"></div><div class="field"><input type="email" required placeholder="Email address"></div></div>
+      <div class="row"><div class="field"><input placeholder="Phone"></div>
+        <div class="field"><select><option>I’m interested in…</option><option>Buying</option><option>Selling</option><option>Renting</option><option>Investment</option></select></div></div>
+      <div class="field"><textarea placeholder="Tell us about your requirements"></textarea></div>
+      <button class="btn solid" type="submit" style="justify-self:start">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      <div class="ok">Thank you — we’ll be in touch within 24 hours.</div>
+    </form>
+  </div>
+</section>
+<section style="padding-bottom:120px"><div class="wrap">
+  <div class="map" data-reveal><iframe loading="lazy" title="Map" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0%2C40.74%2C-73.96%2C40.77&layer=mapnik"></iframe></div>
+</div></section>
+
+</main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

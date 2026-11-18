@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our Agents – Aurelia Estates</title>
+<meta name="description" content="Aurelia Estates – luxury real estate worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/data.js"></script>
+</head>
+<body data-page="agents">
+<div id="scroll">
+<main>
+
+<section class="page-hero">
+  <div class="bgimg" id="ph-bg"></div>
+  <canvas id="hero-canvas" data-mode="house"></canvas>
+  <div class="wrap">
+    <div class="eyebrow">The Team</div>
+    <h1 class="split-text">Meet Our<br><em>Advisors</em></h1>
+    <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Agents</div>
+  </div>
+</section>
+<script>document.getElementById('ph-bg').style.backgroundImage="url("+IMG.city+")"</script>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="agents" data-agents="4"></div>
+  </div>
+</section>
+<section class="bg2" style="padding:90px 0">
+  <div class="wrap stats">
+    <div class="stat"><b data-count="60" data-suffix="+">0</b><span>Advisors</span></div>
+    <div class="stat"><b data-count="15" data-suffix="">0</b><span>Languages</span></div>
+    <div class="stat"><b data-count="40" data-suffix="">0</b><span>Cities</span></div>
+    <div class="stat"><b data-count="24" data-suffix="/7">0</b><span>Availability</span></div>
+  </div>
+</section>
+<section class="pad">
+  <div class="wrap" style="max-width:900px">
+    <div class="center"><div class="eyebrow">Join Us</div><h2 class="split-text">Build a Career in<br><em>Luxury Real Estate</em></h2>
+    <p style="margin:26px auto 40px">We’re always looking for exceptional advisors with a passion for design, service and results.</p>
+    <a href="contact.html" class="btn">Apply Now <i class="fa-solid fa-arrow-right"></i></a></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="bgimg" id="cta-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center">Private Consultation</div>
+    <h2 class="split-text">Let’s Find Your<br><em>Extraordinary Home</em></h2>
+    <p>Speak with a dedicated advisor and receive access to our exclusive off-market portfolio.</p>
+    <a href="contact.html" class="btn solid">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+<script>document.getElementById('cta-bg').style.backgroundImage="url("+IMG.cta+")"</script>
+
+</main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

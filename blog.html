@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Journal – Aurelia Estates</title>
+<meta name="description" content="Aurelia Estates – luxury real estate worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/data.js"></script>
+</head>
+<body data-page="blog">
+<div id="scroll">
+<main>
+
+<section class="page-hero">
+  <div class="bgimg" id="ph-bg"></div>
+  <canvas id="hero-canvas" data-mode="house"></canvas>
+  <div class="wrap">
+    <div class="eyebrow">The Journal</div>
+    <h1 class="split-text">Insights &amp;<br><em>Inspiration</em></h1>
+    <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Journal</div>
+  </div>
+</section>
+<script>document.getElementById('ph-bg').style.backgroundImage="url("+IMG.interior+")"</script>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="blog-feature" data-reveal>
+      <div class="im"><img id="bf" alt="Featured"></div>
+      <div class="tx">
+        <div class="eyebrow" style="margin:0">Featured · Market</div>
+        <h2 style="font-size:clamp(2rem,3.4vw,3rem)">The 2027 Luxury Market Outlook</h2>
+        <p>Our research team analyses where ultra-prime demand is heading — from Mediterranean coasts to Gulf skylines.</p>
+        <a href="#" class="btn" style="align-self:flex-start">Read Report <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="grid" data-posts="6"></div>
+  </div>
+</section>
+<script>document.getElementById('bf').src=IMG.pool</script>
+<section class="pad bg2">
+  <div class="wrap" style="max-width:760px;text-align:center">
+    <div class="eyebrow" style="justify-content:center">Newsletter</div>
+    <h2>Stay <em>Informed</em></h2>
+    <p style="margin:20px 0 34px">Market intelligence and private listings, once a month.</p>
+    <form class="nl" style="display:flex;border:1px solid var(--line)"><input type="email" placeholder="Your email address" required style="flex:1;background:none;border:0;padding:18px;outline:0"><button class="btn solid" style="border:0">Subscribe</button></form>
+  </div>
+</section>
+
+</main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

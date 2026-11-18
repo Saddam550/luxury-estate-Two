@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Us – Aurelia Estates</title>
+<meta name="description" content="Aurelia Estates – luxury real estate worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/data.js"></script>
+</head>
+<body data-page="about">
+<div id="scroll">
+<main>
+
+<section class="page-hero">
+  <div class="bgimg" id="ph-bg"></div>
+  <canvas id="hero-canvas" data-mode="house"></canvas>
+  <div class="wrap">
+    <div class="eyebrow">About Aurelia</div>
+    <h1 class="split-text">Our Story of<br><em>Quiet Excellence</em></h1>
+    <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; About</div>
+  </div>
+</section>
+<script>document.getElementById('ph-bg').style.backgroundImage="url("+IMG.about2+")"</script>
+
+<section class="pad">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">Who We Are</div>
+      <h2 class="split-text">Two Decades of<br><em>Trusted</em> Service</h2>
+      <p style="margin:26px 0">Founded in New York in 2004, Aurelia Estates began with a simple belief: a home of distinction deserves representation of equal distinction. Today our advisors serve clients across 40 cities, from Manhattan penthouses to Mediterranean villas.</p>
+      <p>We are a boutique by design — fewer listings, deeper relationships, and an unwavering commitment to confidentiality.</p>
+    </div>
+    <div class="parallax" style="height:560px"><img id="a1" alt="Luxury home"></div>
+  </div>
+</section>
+<script>document.getElementById('a1').src=IMG.pool</script>
+
+<section class="bg2" style="padding:90px 0">
+  <div class="wrap stats">
+    <div class="stat"><b data-count="22">0</b><span>Years</span></div>
+    <div class="stat"><b data-count="2400" data-suffix="+">0</b><span>Homes Sold</span></div>
+    <div class="stat"><b data-count="60" data-suffix="+">0</b><span>Advisors</span></div>
+    <div class="stat"><b data-count="98" data-suffix="%">0</b><span>Satisfaction</span></div>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:70px"><div class="eyebrow">Our Values</div><h2 class="split-text">What Guides <em>Every Deal</em></h2></div>
+    <div class="svc-grid">
+      <div class="svc"><i class="fa-solid fa-lock"></i><h3>Discretion</h3><p>Your privacy is non-negotiable. Every transaction is handled with complete confidentiality.</p></div>
+      <div class="svc"><i class="fa-solid fa-handshake"></i><h3>Integrity</h3><p>Honest counsel, transparent fees and advice that puts your interests first.</p></div>
+      <div class="svc"><i class="fa-solid fa-gem"></i><h3>Excellence</h3><p>We hold ourselves, and every property we represent, to the highest standard.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad bg2">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:70px"><div class="eyebrow">How It Works</div><h2 class="split-text">Your Journey <em>With Us</em></h2></div>
+    <div class="steps">
+      <div class="step"><h3>Consultation</h3><p>We learn your lifestyle, priorities and timeline in a private meeting.</p></div>
+      <div class="step"><h3>Curation</h3><p>A tailored selection of on- and off-market residences is prepared.</p></div>
+      <div class="step"><h3>Viewing</h3><p>Private tours by helicopter, yacht or car — however you prefer.</p></div>
+      <div class="step"><h3>Closing</h3><p>Negotiation, legal and handover, managed end to end.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow">Leadership</div><h2 class="split-text">The People<br><em>Behind Aurelia</em></h2></div></div>
+    <div class="agents" data-agents="4"></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="bgimg" id="cta-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center">Private Consultation</div>
+    <h2 class="split-text">Let’s Find Your<br><em>Extraordinary Home</em></h2>
+    <p>Speak with a dedicated advisor and receive access to our exclusive off-market portfolio.</p>
+    <a href="contact.html" class="btn solid">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+<script>document.getElementById('cta-bg').style.backgroundImage="url("+IMG.cta+")"</script>
+
+</main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

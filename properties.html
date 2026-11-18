@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Properties – Aurelia Estates</title>
+<meta name="description" content="Aurelia Estates – luxury real estate worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/data.js"></script>
+</head>
+<body data-page="properties">
+<div id="scroll">
+<main>
+
+<section class="page-hero">
+  <div class="bgimg" id="ph-bg"></div>
+  <canvas id="hero-canvas" data-mode="house"></canvas>
+  <div class="wrap">
+    <div class="eyebrow">Our Portfolio</div>
+    <h1 class="split-text">Exceptional<br><em>Properties</em></h1>
+    <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Properties</div>
+  </div>
+</section>
+<script>document.getElementById('ph-bg').style.backgroundImage="url("+IMG.hero+")"</script>
+
+<section class="pad" style="padding-top:80px">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:40px">
+      <div class="filters" id="pills" style="margin:0"></div>
+      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+        <div class="field" style="min-width:220px"><input id="q" placeholder="Search city or name"></div>
+        <div class="field"><select id="sort"><option value="new">Newest</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select></div>
+      </div>
+    </div>
+    <p id="count" style="margin-bottom:30px;color:var(--gold);letter-spacing:.15em;text-transform:uppercase;font-size:.8rem"></p>
+    <div class="grid" data-properties="all"></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="bgimg" id="cta-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center">Private Consultation</div>
+    <h2 class="split-text">Let’s Find Your<br><em>Extraordinary Home</em></h2>
+    <p>Speak with a dedicated advisor and receive access to our exclusive off-market portfolio.</p>
+    <a href="contact.html" class="btn solid">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+<script>document.getElementById('cta-bg').style.backgroundImage="url("+IMG.cta+")"</script>
+
+</main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
